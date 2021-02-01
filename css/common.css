@@ -1,3 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   background-color: var(--primary-bg-color);
   color: var(--text-main-color);
@@ -34,7 +44,8 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   outline: 2px solid tomato;
 }
 
@@ -60,6 +71,9 @@ body {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .site-nav .link {
@@ -77,11 +91,14 @@ body {
 }
 
 .site-contacts {
-  list-style: none;
+  margin-bottom: 0;
+  margin-top: 0;
 
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  list-style: none;
 }
 
 .site-contacts .link-contacts {
