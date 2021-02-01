@@ -3,126 +3,130 @@
 /* Hero */
 
 .hero {
-    background-color: #2F303A;
+  background-color: #2f303a;
 }
 
 .hero .hero-title {
-    color: #FFFFFF;
+  color: #ffffff;
 
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .hero-button {
-    color: #FFFFFF;
-    background-color: var(--accent-color);
+  color: #ffffff;
+  background-color: var(--accent-color);
 
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;
-    letter-spacing: 0.06em;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
 }
 
 /* For all sections */
 
 .section .section-title {
-    color: var(--title-text-color);
+  color: var(--title-text-color);
 
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
 }
 
 /* Features */
 
 .feature-list .title {
-    color: var(--title-text-color);
+  color: var(--title-text-color);
 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
 }
 
 .feature-list {
-    list-style: none;
+  list-style: none;
 }
-
 
 /* Work */
 
 .work-list {
-    list-style: none;
+  list-style: none;
 }
 
 /* Our team */
 
 .team-list {
-    list-style: none;
+  list-style: none;
 }
 
 .team-list .title {
-    color: var(--title-text-color);
+  color: var(--title-text-color);
 
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.9;
-    text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
 }
 
 .team-list .text {
-    font-size: 16px;
-    line-height: 1.9;
-    text-align: center;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
 }
 
 .team-section {
-    background-color: #F5F4FA;
+  background-color: #f5f4fa;
 }
 
 /* Стили для portfolio.html*/
 
 .filter-list {
-    list-style: none;
+  list-style: none;
 }
 
 .button {
-    color: var(--title-text-color);
-    background-color: var(--primary-bg-button);
+  color: var(--title-text-color);
+  background-color: var(--primary-bg-button);
 
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
-    letter-spacing: 0.03em;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
 }
 
 .button:hover,
 .button:focus {
-    color: var(--primary-white-color);
-    background-color: var(--accent-color);
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
 }
 
 .example-list {
-    list-style: none;
+  list-style: none;
 }
 
-.example-list .title {
-    color: var(--title-text-color);
-
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+.example-list .link {
+  text-decoration: none;
+  color: var(--text-main-color);
 }
 
-.example-list .text {
-    font-size: 16px;
-    line-height: 1.9;
+.name-card-container .title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.name-card-container .text {
+  font-size: 16px;
+  line-height: 1.9;
 }
