@@ -48,8 +48,20 @@ body {
   margin-right: auto;
   outline: 2px solid tomato;
 }
+/* ======== HEADER ======== */
+/* ======== Site-nav ======== */
 
-/* Site-nav */
+.header-page {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+}
 
 .logo {
   color: #2196f3;
@@ -59,6 +71,8 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+
+  display: inline-block;
 }
 
 .logo-header {
@@ -72,8 +86,26 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 
+  /* display: flex;
+  flex-direction: row;
+  justify-content: center; */
   margin-top: 0;
   margin-bottom: 0;
+  padding: 0;
+}
+
+.site-nav-item {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+.site-nav-item:first-child {
+  margin-left: 0;
+}
+
+.menu {
+  display: inline-flex;
+  margin-left: 93px;
 }
 
 .site-nav .link {
@@ -90,15 +122,27 @@ body {
   color: var(--accent-color);
 }
 
+/* Contacts */
+
+.contacts {
+  display: inline-block;
+  margin-left: auto;
+}
+
 .site-contacts {
   margin-bottom: 0;
   margin-top: 0;
+  padding: 0;
 
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
 
   list-style: none;
+}
+
+.site-contacts-item {
+  display: inline-block;
 }
 
 .site-contacts .link-contacts {
@@ -111,7 +155,13 @@ body {
   color: var(--accent-color);
 }
 
-/* Footer */
+.mail-with-margin {
+  margin-right: 50px;
+}
+
+/* ======== END HEADER ======== */
+
+/* ======== FOOTER ======== */
 
 .logo-footer {
   color: #ffffff;
@@ -121,21 +171,27 @@ body {
   background-color: var(--secondary-bg-color);
 }
 
-.address-container {
+.address-list {
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
 }
 
-.address-container .text {
+.address-list-item {
+  list-style: none;
+}
+
+.address-list-item .text {
   color: var(--primary-white-color);
   text-decoration: none;
 }
 
-.address-container .link {
+.address-list-item .link {
   color: var(--secondary-white-color);
   text-decoration: none;
 }
+
+/* ======== END FOOTER ======== */
 
 /* Hidden header */
 
@@ -149,3 +205,5 @@ body {
   width: 1px !important;
   overflow: hidden;
 }
+
+/* ======== END FOOTER ======== */
