@@ -18,8 +18,8 @@
   </head>
 
   <body>
-    <div class="container">
-      <header class="header-page">
+    <header class="header-page">
+      <div class="container header-container">
         <nav class="nav-container">
           <a href="./index.html" class="logo" arial-label="Логотип веб-студии"
             >Web<span class="logo-header">Studio</span></a
@@ -41,8 +41,8 @@
             <li class="site-contacts-item"><a href="tel:+380961111111" class="link-contacts">+38 096 111 11 11</a></li>
           </ul>
         </div>
-      </header>
-    </div>
+      </div>
+    </header>
     <main>
       <!-- Герой -->
 
@@ -86,7 +86,7 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="work-list">
             <li class="work-list-item">
-              <img src="./img/box_1.jpg" alt="Программист пишет код" width="370" height="294" />
+              <img src="./img/box_1.jpg" alt="Программист пишет код" width="370" height="294" class="img" />
             </li>
             <li class="work-list-item">
               <img
@@ -94,14 +94,16 @@
                 alt="Команда дизайнеров работает над интерфейсом мобильного телефона"
                 width="370"
                 height="294"
+                class="img"
               />
             </li>
-            <li class="work-list-item">
+            <li class="img">
               <img
                 src="./img/box_3.jpg"
                 alt="Веб-дизанер работает с графическим планшетом для выбора цвета"
                 width="370"
                 height="294"
+                class="img"
               />
             </li>
           </ul>
@@ -114,24 +116,64 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-list-item">
-              <img src="./img/team_card_1.jpg" alt="Портрет сотрудника веб-студии" width="270" height="260" />
-              <h3 class="title">Игорь Демьяненко</h3>
-              <p lang="en" class="text">Product Designer</p>
+              <div class="content-card-team">
+                <img
+                  src="./img/team_card_1.jpg"
+                  alt="Портрет сотрудника веб-студии"
+                  width="270"
+                  height="260"
+                  class="img"
+                />
+              </div>
+              <div class="footer-card-team">
+                <h3 class="title">Игорь Демьяненко</h3>
+                <p lang="en" class="text">Product Designer</p>
+              </div>
             </li>
             <li class="team-list-item">
-              <img src="./img/team_card_2.jpg" alt="Портрет сотрудника веб-студии" width="270" height="260" />
-              <h3 class="title">Ольга Репина</h3>
-              <p lang="en" class="text">Frontend Developer</p>
+              <div class="content-card-team">
+                <img
+                  src="./img/team_card_2.jpg"
+                  alt="Портрет сотрудника веб-студии"
+                  width="270"
+                  height="260"
+                  class="img"
+                />
+              </div>
+              <div class="footer-card-team">
+                <h3 class="title">Ольга Репина</h3>
+                <p lang="en" class="text">Frontend Developer</p>
+              </div>
             </li>
             <li class="team-list-item">
-              <img src="./img/team_card_3.jpg" alt="Портрет сотрудника веб-студии" width="270" height="260" />
-              <h3 class="title">Николай Тарасов</h3>
-              <p lang="en" class="text">Marketing</p>
+              <div class="content-card-team">
+                <img
+                  src="./img/team_card_3.jpg"
+                  alt="Портрет сотрудника веб-студии"
+                  width="270"
+                  height="260"
+                  class="img"
+                />
+              </div>
+              <div class="footer-card-team">
+                <h3 class="title">Николай Тарасов</h3>
+                <p lang="en" class="text">Marketing</p>
+              </div>
             </li>
             <li class="team-list-item">
-              <img src="./img/team_card_4.jpg" alt="Портрет сотрудника веб-студии" width="270" height="260" />
-              <h3 class="title">Михаил Ермаков</h3>
-              <p lang="en" class="text">UI Designer</p>
+              <div class="content-card-team">
+                <img
+                  src="./img/team_card_4.jpg"
+                  alt="Портрет сотрудника веб-студии"
+                  width="270"
+                  height="260"
+                  class="img"
+                />
+              </div>
+              <div class="footer-card-team">
+                <h3 class="title">Михаил Ермаков</h3>
+                <p lang="en" class="text">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -139,18 +181,20 @@
     </main>
 
     <footer class="footer-page">
-      <a href="./index.html" class="logo">Web<span class="logo-footer">Studio</span></a>
-      <address class="address-container">
-        <ul class="address-list">
-          <li class="address-list-item">
-            <a href="https://goo.gl/maps/Ahhb2B3hDKV3ZpVi9" class="text" target="_blank" rel="noopener noreferrer"
-              >г. Киев, пр-т Леси Украинки, 26</a
-            >
-          </li>
-          <li class="address-list-item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-          <li class="address-list-item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
-        </ul>
-      </address>
+      <div class="container footer-container">
+        <a href="./index.html" class="logo logo-for-footer">Web<span class="logo-footer">Studio</span></a>
+        <address class="address-container">
+          <ul class="address-list">
+            <li class="address-list-item">
+              <a href="https://goo.gl/maps/Ahhb2B3hDKV3ZpVi9" class="text" target="_blank" rel="noopener noreferrer"
+                >г. Киев, пр-т Леси Украинки, 26</a
+              >
+            </li>
+            <li class="address-list-item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+            <li class="address-list-item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
