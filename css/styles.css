@@ -89,6 +89,17 @@ main {
   margin-right: auto;
 }
 
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
 /* index.html styles */
 
 .section-title {
@@ -144,6 +155,7 @@ main {
 .nav-list {
   display: flex;
   gap: 40px;
+  padding: 24px 0;
 }
 
 .nav-link {
@@ -159,8 +171,6 @@ main {
 
 .contacts {
   font-style: normal;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .contacts-list {
@@ -180,15 +190,11 @@ main {
 
 .hero {
   background-color: var(--navy-blue-color);
-}
-
-.hero-container {
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding: 188px 0;
 }
 
 .hero-title {
-  width: 500px;
+  max-width: 496px;
   font-size: 56px;
   color: var(--white-color);
   line-height: 1.07;
@@ -211,6 +217,7 @@ main {
   padding: 16px 32px;
   margin-left: auto;
   margin-right: auto;
+  min-width: 169px;
 }
 
 .hero-button:hover,
@@ -278,7 +285,8 @@ main {
 
 .portfolio-list {
   display: flex;
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 48px;
   flex-wrap: wrap;
 }
 
@@ -300,11 +308,12 @@ main {
 
 .footer {
   background-color: var(--navy-blue-color);
+  padding: 100px 0;
 }
 
-.footer-container {
-  padding-top: 100px;
-  padding-bottom: 100px;
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .secondary-logo-text {
@@ -313,6 +322,5 @@ main {
 
 .footer-text {
   color: var(--cloud-color);
-  margin-top: 16px;
   width: 270px;
 }
